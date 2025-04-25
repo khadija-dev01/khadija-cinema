@@ -1,83 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Movie Theater</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css"> 
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Movie Theater</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css"> 
+  
  
-
-  <style>
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("img/3.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white;
-}
-
-  </style>
-</head>
-<body>
-<header>
-  <h1> Khadija Cinema🍿🎬</h1>
-  <p>Now Showing: My Faborite Movies And Animations</p>
-</header>
-<main>
+   <style>
+ body {
+   margin: 0;
+   padding: 0;
+   background-image: url("img/1.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   color: white;
+ }
  
-  <h2>1.The Pursuit Happyness</h2>
-  <div class="video-container">
+   </style>
+ </head>
+ <body>
+ <header>
+   <h1> Khadija Cinema🍿🎬</h1>
+   <p>Now Showing: My Faborite Movies And Animations</p>
+ </header>
+ <main>
+  
+   <h2>1.The Pursuit Happyness</h2>
+   <div class="video-container">
+     
+       <iframe width="720" height="405" src="https://www.youtube.com/embed/DMOBlEcRuw8" frameborder="0" allowfullscreen></iframe>
     
-      <iframe width="720" height="405" src="https://www.youtube.com/embed/DMOBlEcRuw8" frameborder="0" allowfullscreen></iframe>
-   
-  </div>
-<section class="buttons">
-    <button>Play Again</button>
-    <button>Rate Movie</button><br><br>
-</section>
-
- <h2>2.My Faborite  Animation: Puss In Boots </h2>
-    <div class="video-container">
-      <iframe width="720" height="405" src="https://www.youtube.com/embed/1esRrwrmWzA" frameborder="0" allowfullscreen></iframe>
-    </div>
-  <section class="buttons">
-      <button>Play Again</button>
-      <button>Rate Movie</button><br><br><be>
-  </section>
-  <h2>3. Ralph Breaks </h2>
-    <div class="video-container">
-      <iframe width="720" height="405" src="https://www.youtube.com/embed/87E6N7ToCxs" frameborder="0" allowfullscreen></iframe>
-    </div>
-  <section class="buttons">
-      <button>Play Again</button>
-      <button>Rate Movie</button><br><br><be>
-  </section>
-</main>
-
-<footer>
-    <P>Enjoy the show!</P>
-    <p>
-       Copyright © 2025 Credit by Khadija 
-    </p>
-</footer>
-<script>
-  const videos = document.querySelectorAll("video");
-
-  videos.forEach(video => {
-    video.addEventListener("play", () => {
-      videos.forEach(otherVideo => {
-        if (otherVideo !== video) {
-          otherVideo.pause();
-        }
-      });
-    });
-  });
-</script>
-</body>
-</html>
+   </div>
+ <section class="buttons">
+     <button>Play Again</button>
+     <button>Rate Movie</button><br><br>
+ </section>
+ 
+  <h2>2.My Faborite  Animation: Puss In Boots </h2>
+     <div class="video-container">
+       <iframe width="720" height="405" src="https://www.youtube.com/embed/1esRrwrmWzA" frameborder="0" allowfullscreen></iframe>
+     </div>
+   <section class="buttons">
+       <button>Play Again</button>
+       <button>Rate Movie</button><br><br><be>
+   </section>
+   <h2>3. Ralph Breaks </h2>
+     <div class="video-container">
+       <iframe width="720" height="405" src="https://www.youtube.com/embed/87E6N7ToCxs" frameborder="0" allowfullscreen></iframe>
+     </div>
+   <section class="buttons">
+       <button>Play Again</button>
+       <button>Rate Movie</button><br><br><be>
+   </section>
+ </main>
+ 
+ <footer>
+     <P>Enjoy the show!</P>
+     <p>
+        Copyright © 2025 Credit by Khadija 
+     </p>
+ </footer>
+ <script>
+   const videos = document.querySelectorAll("video");
+ 
+   videos.forEach(video => {
+     video.addEventListener("play", () => {
+       videos.forEach(otherVideo => {
+         if (otherVideo !== video) {
+           otherVideo.pause();
+         }
+       });
+     });
+   });
+ </script>
+ </body>
+ </html>
