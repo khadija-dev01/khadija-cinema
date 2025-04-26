@@ -1,13 +1,14 @@
-
-
 body {
     font-family: 'Cinzel', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #fff;
     text-align: center;
-}
+  }
 
 header {
     background-color: #205781;
@@ -33,26 +34,26 @@ main {
     max-width: 800px;
 }
 
-.movie-container {
-    margin: 20px 0;
-    background-color: #444;
+.video-container {
+    margin: 20px auto;
+    background-color: #205781;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     width: 100%;
-    max-width: 100%;
+    max-width: 1000px;
     box-sizing: border-box;
 }
 
-video {
+iframe {
     width: 100%;
+    height: 400px;
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-    max-width: 100%;
-    height: auto;
     display: block;
     margin: 0 auto;
-}
+  }
 
 .buttons {
     margin-top: 20px;
@@ -92,4 +93,22 @@ footer p {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .movie-container {
+        padding: 10px;
+    }
 }
